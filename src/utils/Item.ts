@@ -1,8 +1,10 @@
 class Item {
   name: string;
 
+  /** Denotes the number of days we have to sell the item */
   sellIn: number;
 
+  /** Denotes how valuable the item is */
   quality: number;
 
   constructor(
