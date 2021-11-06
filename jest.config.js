@@ -7,4 +7,5 @@ module.exports = {
     'test/(.*)': '<rootDir>/test/$1',
     '@utils/(.*)': '<rootDir>/src/utils/$1',
   },
+  "testPathIgnorePatterns": ["dist"]
 };

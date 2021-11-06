@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Gilded Rose kata in TypeScript",
   "scripts": {
-    "precompile": "rimraf app/**/*.js test/**/*.js",
-    "compile": "tsc",
+    "precompile": "rimraf dist",
+    "build": "tsc",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
