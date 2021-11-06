@@ -1,12 +1,19 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "target": "es5",
-        "strict": true,
-        "noImplicitAny": false,
-        "sourceMap": false
-    },
-    "exclude": [
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "strict": true,
+    "noImplicitAny": false,
+    "sourceMap": false,
+    "outDir": "dist",
+    "baseUrl": "./",
+    "paths": {
+      "src/*": ["src/*"],
+      "test/*": ["test/*"],
+      "@utils/*": ["src/utils/*"],
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }

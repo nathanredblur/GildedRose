@@ -8,8 +8,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "lint:eslint": "eslint . --ext .ts,.js,.tsx,.jsx",
-    "lint:eslint:fix": "eslint . --ext .ts,.js,.tsx,.jsx --fix"
+    "lint:eslint": "eslint . --ext .ts,.tsx",
+    "lint:eslint:fix": "eslint . --ext .ts,.tsx --fix"
   },
   "license": "MIT",
   "private": true,
