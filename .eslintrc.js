@@ -1,0 +1,14 @@
+module.exports = {
+  env: {
+    browser: true,
+    jest: true,
+  },
+  extends: [
+    'airbnb',
+    'airbnb-typescript',
+    'prettier',
+  ],
+  parserOptions: {
+    project: './tsconfig.json'
+  }
+};
