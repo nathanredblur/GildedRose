@@ -1,7 +1,5 @@
 import styles from './Toggle.module.scss'
 
-console.log(styles)
-
 type ToggleProps = {
   onToggle: React.ChangeEventHandler<HTMLInputElement>;
   value?: boolean;
