@@ -1,5 +1,5 @@
 import GildedRose from '@utils/GildedRose';
-import itemFactory, { ItemType } from './ItemFactory';
+import { ItemType, itemFactory } from './ItemFactory';
 
 const createGildedRose = (items: ItemType[] = []) => new GildedRose(items);
 

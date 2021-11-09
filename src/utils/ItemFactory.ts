@@ -4,7 +4,7 @@ import Event from './items/Event';
 import RegularItem from './items/RegularItem';
 import Conjured from './items/Conjured';
 
-type ItemProps = {
+export type ItemProps = {
   name: string;
 
   /** Denotes the number of days we have to sell the item */
@@ -16,13 +16,13 @@ type ItemProps = {
 
 export type ItemType = RegularItem | Legendary | Event | Conjured
 
-const isLegendary = (item: ItemProps) => item.name === 'Sulfuras, Hand of Ragnaros';
+const isLegendary = (item: ItemProps) => item.name.includes('Sulfuras');
 const isAged = (item: ItemProps) => item.name.includes('Aged');
 const isEvent = (item: ItemProps) => item.name.includes('Backstage passes');
 const isConjured = (item: ItemProps) => item.name.includes('Conjured');
 
 
-const itemFactory = (item: ItemProps) => {
+export const itemFactory = (item: ItemProps) => {
   const { name, sellIn = 10, quality = 20 } = item;
 
   if (isAged(item)) return new Aged(name, sellIn, quality);
@@ -33,4 +33,4 @@ const itemFactory = (item: ItemProps) => {
   return new RegularItem(name, sellIn, quality)
 }
 
-export default itemFactory;
+export const itemsFactory = (items: ItemProps[]) => items.map(itemFactory);
